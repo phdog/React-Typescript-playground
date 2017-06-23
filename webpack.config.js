@@ -4,7 +4,7 @@ var webpack = require('webpack');
 const config = {
   entry: {
     app: [
-      './src/index.ts'
+      './src/index.tsx'
     ],
   },
 
@@ -28,7 +28,7 @@ const config = {
   devtool:  'eval',
   devServer: {
     progress: true,
-    //hot: true,
+    hot: true,
     inline: true,
     publicPath: 'build/',
     historyApiFallback: true,
